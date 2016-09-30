@@ -2,6 +2,7 @@
   "name": "my-ember",
   "dependencies": {
     "ember": "~2.8.0",
-    "ember-cli-shims": "0.1.1"
+    "ember-cli-shims": "0.1.1",
+    "semantic": "semantic-ui#^2.2.4"
   }
 }

@@ -1,3 +1,7 @@
+/* Router.js
+Este es el router ppal de Ember.
+No matter how the URL gets set, the first thing that happens is that the Ember router maps the URL to a route handler
+*/
 import Ember from 'ember';
 import config from './config/environment';
 
@@ -7,6 +11,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('scientists');
+  this.route('programmers');
 });
 
 export default Router;

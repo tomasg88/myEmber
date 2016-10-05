@@ -1,7 +1,20 @@
-<div class="ui inverted menu">
+<div class="ui menu {{menuClass}}">
 	<h3 class="header item">{{titleNav}}</h3>
-	<a class="item" href="#">panel 1</a>
-	<a class="item" href="#">panel 2</a>
-	<a class="item" href="#">panel 3</a>
-	<a class="item" href="#">panel 4</a>
+	{{#link-to 'news' class="item"}}
+		News
+	{{/link-to}}
+	{{#link-to 'about' class="item"}}
+		About me
+	{{/link-to}}
+	<a class="item" href="#">Tutorials/How to's</a>
+	{{#link-to 'contact' class="item"}}
+		Work with me
+	{{/link-to}}
+	<a class="item" target="_blank" href="http://github.com/tomasg88/">Gitfolio</a>
+	<div class="item right">
+		<div class="ui icon input">
+		  <input placeholder="Search..." type="text">
+		  <i class="search icon"></i>
+		</div>
+	</div>
 </div>

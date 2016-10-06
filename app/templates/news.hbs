@@ -2,9 +2,9 @@
 <div class="jumbo">
   <div class="right tomster"></div>
   <h2>Lista de noticias</h2>
-  <p>
-    {{#each news as |new|}} 
-      {{news-list lanew=new}}
-    {{/each}}
-  </p>
+  <div class="">
+    {{#each model as |new| }} 
+    	{{news-list unaNew=new}}
+    {{/each }}
+    </div>
 </div>

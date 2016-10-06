@@ -1,7 +1,14 @@
-<h3>Titulo lista: {{laNew.title}}</h3>
-<ul>
-    <li>{{laNew.author}}</li>
-    <li>{{laNew.text}}</li>
-    <li>{{laNew.image}}</li>
-</ul>
-
+<div class="ui card">
+  <div class="image">
+    <img src="{{unaNew.image}}">
+  </div>
+  <div class="content">
+    <a class="header">{{unaNew.title}}</a>
+    <div class="meta">
+      <span class="date">{{unaNew.author}}</span>
+    </div>
+    <div class="description">
+      {{unaNew.text}}
+    </div>
+  </div>
+</div>

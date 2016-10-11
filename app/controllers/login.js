@@ -4,7 +4,8 @@ export default Ember.Controller.extend({
     
     actions: {
         logUser() {
-            alert(this.get('store').findRecord('user', 1));
+        	var aux = this.get('store').findRecord('user', 1);
+            console.log('aux: ' + aux.status + "\nmsg: " + aux.message);
         }
     }
     

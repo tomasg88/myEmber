@@ -1,5 +1,8 @@
-<div class="ui menu {{menuClass}}">
-	<h3 class="header item">{{titleNav}}</h3>
+<!--<div class="ui inverted menu"> menu invertido-->
+<div class="ui {{dynamicClass}} menu"> <!-- menu transparente -->
+	{{#link-to 'home' class="header item"}}
+		<h3>{{titleNav}}</h3>
+	{{/link-to}}
 	{{#link-to 'news' class="item"}}
 		News
 	{{/link-to}}
@@ -11,15 +14,15 @@
 		Work with me
 	{{/link-to}}
 	<a class="item" target="_blank" href="http://github.com/tomasg88/">Gitfolio</a>
-	<div class="item right">
-		<div class="ui icon input">
-		  <input placeholder="Search..." type="text">
-		  <i class="search icon"></i>
+	<div class="right menu">
+		<div class="item">
+			<div class="ui icon input">
+			<input placeholder="Search..." type="text">
+			<i class="search icon"></i>
+			</div>
 		</div>
+		{{#link-to 'login' class="item"}}
+        	Login
+    	{{/link-to}}
 	</div>
-    {{#link-to 'login' class="item right"}}
-        Login
-    {{/link-to}}
-    
-    
 </div>

@@ -17,6 +17,7 @@ Router.map(function() {
   this.route('contact');
   this.route('news');
   this.route('login');
+  this.route('home');
 });
 
 export default Router;

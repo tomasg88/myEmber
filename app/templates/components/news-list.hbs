@@ -1,14 +1,21 @@
-<div class="ui card">
-  <div class="image">
-    <img src="{{unaNew.image}}">
-  </div>
-  <div class="content">
-    <a class="header">{{unaNew.title}}</a>
-    <div class="meta">
-      <span class="date">{{unaNew.author}}</span>
+<div class="ui relaxed divided items">
+  {{#each repoNews as |unaNew|}}
+  <div class="item">
+    <div class="ui small image">
+      <img src="{{unaNew.image}}">
     </div>
-    <div class="description">
-      {{unaNew.text}}
+    <div class="content">
+      <a class="header">{{unaNew.title}}</a>
+      <div class="meta">
+        <span class="date">{{unaNew.author}}</span>
+      </div>
+      <div class="description">
+        {{unaNew.text}}
+      </div>
+      <div class="extra">
+        extra: userName, detalle de publicacion, etc.
+      </div>
     </div>
   </div>
+  {{/each}}
 </div>

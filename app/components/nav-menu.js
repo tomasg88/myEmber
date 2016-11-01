@@ -6,7 +6,7 @@ export default Ember.Component.extend({
 
     init: function(){
         this._super(...arguments);
-        this.dynamicClass = "fixed";
+        this.dynamicClass = "primary inverted";
     }
 
 });
